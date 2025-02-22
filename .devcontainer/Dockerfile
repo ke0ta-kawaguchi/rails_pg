@@ -4,5 +4,5 @@ FROM ghcr.io/rails/devcontainer/images/ruby:$RUBY_VERSION
 
 RUN apt-get update -qq && \
   apt-get install --no-install-recommends -y \
-  default-mysql-client libjemalloc2 libvips build-essential libyaml-dev default-libmysqlclient-dev && \
+  default-mysql-client libjemalloc2 libvips build-essential libyaml-dev libmariadb-dev default-libmysqlclient-dev && \
   rm -rf /var/lib/apt/lists /var/cache/apt/archives
